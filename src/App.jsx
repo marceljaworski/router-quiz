@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import './App.css'
 import Home from './components/Home'
-import Questions from './components/Question'
+import Question from './components/Question'
+import questions from './questions'
+console.log(Object.keys(questions))
 
 function App() {
 
@@ -17,7 +19,7 @@ function App() {
       </header>
         <Routes>
           <Route path="/" element={<Home />}/>
-          <Route path="/question" element={<Questions />}/>
+          <Route path="/question" element={<Question />}/>
           
         </Routes>
       </BrowserRouter>
